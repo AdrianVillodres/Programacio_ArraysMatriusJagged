@@ -1,0 +1,15 @@
+C:\Users\isard\Desktop\Programacion\BLOC1\Exercicis\Arrays\Arrays_Matrix_JaggedA\Arrays_Matrix_JaggedA\bin\Debug\net8.0\Arrays_Matrix_JaggedA.exe
+C:\Users\isard\Desktop\Programacion\BLOC1\Exercicis\Arrays\Arrays_Matrix_JaggedA\Arrays_Matrix_JaggedA\bin\Debug\net8.0\Arrays_Matrix_JaggedA.deps.json
+C:\Users\isard\Desktop\Programacion\BLOC1\Exercicis\Arrays\Arrays_Matrix_JaggedA\Arrays_Matrix_JaggedA\bin\Debug\net8.0\Arrays_Matrix_JaggedA.runtimeconfig.json
+C:\Users\isard\Desktop\Programacion\BLOC1\Exercicis\Arrays\Arrays_Matrix_JaggedA\Arrays_Matrix_JaggedA\bin\Debug\net8.0\Arrays_Matrix_JaggedA.dll
+C:\Users\isard\Desktop\Programacion\BLOC1\Exercicis\Arrays\Arrays_Matrix_JaggedA\Arrays_Matrix_JaggedA\bin\Debug\net8.0\Arrays_Matrix_JaggedA.pdb
+C:\Users\isard\Desktop\Programacion\BLOC1\Exercicis\Arrays\Arrays_Matrix_JaggedA\Arrays_Matrix_JaggedA\obj\Debug\net8.0\Arrays_Matrix_JaggedA.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\isard\Desktop\Programacion\BLOC1\Exercicis\Arrays\Arrays_Matrix_JaggedA\Arrays_Matrix_JaggedA\obj\Debug\net8.0\Arrays_Matrix_JaggedA.AssemblyInfoInputs.cache
+C:\Users\isard\Desktop\Programacion\BLOC1\Exercicis\Arrays\Arrays_Matrix_JaggedA\Arrays_Matrix_JaggedA\obj\Debug\net8.0\Arrays_Matrix_JaggedA.AssemblyInfo.cs
+C:\Users\isard\Desktop\Programacion\BLOC1\Exercicis\Arrays\Arrays_Matrix_JaggedA\Arrays_Matrix_JaggedA\obj\Debug\net8.0\Arrays_Matrix_JaggedA.csproj.CoreCompileInputs.cache
+C:\Users\isard\Desktop\Programacion\BLOC1\Exercicis\Arrays\Arrays_Matrix_JaggedA\Arrays_Matrix_JaggedA\obj\Debug\net8.0\Arrays_Matrix_JaggedA.sourcelink.json
+C:\Users\isard\Desktop\Programacion\BLOC1\Exercicis\Arrays\Arrays_Matrix_JaggedA\Arrays_Matrix_JaggedA\obj\Debug\net8.0\Arrays_Matrix_JaggedA.dll
+C:\Users\isard\Desktop\Programacion\BLOC1\Exercicis\Arrays\Arrays_Matrix_JaggedA\Arrays_Matrix_JaggedA\obj\Debug\net8.0\refint\Arrays_Matrix_JaggedA.dll
+C:\Users\isard\Desktop\Programacion\BLOC1\Exercicis\Arrays\Arrays_Matrix_JaggedA\Arrays_Matrix_JaggedA\obj\Debug\net8.0\Arrays_Matrix_JaggedA.pdb
+C:\Users\isard\Desktop\Programacion\BLOC1\Exercicis\Arrays\Arrays_Matrix_JaggedA\Arrays_Matrix_JaggedA\obj\Debug\net8.0\Arrays_Matrix_JaggedA.genruntimeconfig.cache
+C:\Users\isard\Desktop\Programacion\BLOC1\Exercicis\Arrays\Arrays_Matrix_JaggedA\Arrays_Matrix_JaggedA\obj\Debug\net8.0\ref\Arrays_Matrix_JaggedA.dll
