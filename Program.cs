@@ -4,95 +4,29 @@
     {
         public static void Main()
         {
-            const string IntroMsg = "List pokemon = 1 | exit = 0";
-            const string ErrorMsg = "Error, you must put an integer number between 0 and 1";
-            const string PokedexMsg = "Your pokedex contains:";
-            const string PkdxErrorMsg = "Error, you must put an integer between 1 and 15";
-            const string ReleaseMsg = "Which pokemon you want to release? Enter the index: ";
-            const string PkmnReleasedMsg = "You released {0}";
-            const string PkmnReleasedEmptyMsg = "The index {0} is empty. There's no Pokémon in that slot to release.";
-            const string NoPkmn = "empty";
+            Random rand = new Random();
+            int[] arrayStraight = new int[10];
+            int[] arrayBackwards = new int[10];
+            int numArray = 9;
+            int numRand;
 
-            int op;
-            int index;
-            string[] pokemonList = new string[] { "Pikachu", "Charmander", "Squirtle", "Bulbasaur", "Eevee", "Jigglypuff", "Meowth", "Psyduck", "Snorlax", "Gengar", "Machop", "Magikarp", "Vulpix", "Onix", "Abra"};
-
-            
-            op = 2;
-            while(op != 0)
+            for(int i = 0; i < arrayStraight.GetLength(0);i++)
             {
-                Console.WriteLine(IntroMsg);
-                try
-                {
-                    op = Int32.Parse(Console.ReadLine());
-                }
-                catch (FormatException)
-                {
-                    Console.WriteLine(ErrorMsg);
-                }
-                catch (OverflowException)
-                {
-                    Console.WriteLine(ErrorMsg);
-                }
-                catch (Exception)
-                {
-                    Console.WriteLine(ErrorMsg);
-                }
-
-                switch (op)
-                {
-                    case 1:
-                        index = 0;
-                        Console.WriteLine(PokedexMsg);
-                        for (int i = 0; i < pokemonList.GetLength(0); i++)
-                        {
-                            Console.WriteLine(pokemonList[i]);
-                        }
-                        Console.WriteLine(ReleaseMsg);
-                        try
-                        {
-                            index = Int32.Parse(Console.ReadLine());
-                        }
-                        catch (FormatException)
-                        {
-                            Console.WriteLine(ErrorMsg);
-                        }
-                        catch (OverflowException)
-                        {
-                            Console.WriteLine(ErrorMsg);
-                        }
-                        catch (Exception)
-                        {
-                            Console.WriteLine(ErrorMsg);
-                        }
-                        if(index > 0 && index < 16)
-                        {
-                            if (pokemonList[index] != "empty")
-                            {
-                                Console.WriteLine(PkmnReleasedMsg, pokemonList[index]);
-                                pokemonList[index] = NoPkmn;
-                            }
-                            else
-                            {
-                                Console.WriteLine(PkmnReleasedEmptyMsg, index);
-                            }
-
-                        }
-                        else
-                        {
-                            Console.WriteLine(PkdxErrorMsg);
-                        }
-                        break;
-                    case 0:
-
-                        break;
-                    default:
-                        Console.WriteLine(ErrorMsg);
-                        break;
-                }
-                
+                numRand = rand.Next(1, 10);
+                arrayStraight[i] = numRand;
+                arrayBackwards[numArray] = numRand;
+                numArray--;
             }
-            
+            for (int i = 0; i < arrayStraight.GetLength(0); i++)
+            {
+                Console.Write($"{arrayStraight[i]} ");
+            }
+            Console.WriteLine();
+            for (int i = 0; i < arrayStraight.GetLength(0); i++)
+            {
+                Console.Write($"{arrayBackwards[i]} ");
+            }
+
         }
     }
 }
