@@ -4,89 +4,55 @@
     {
         public static void Main()
         {
-            const string IntroMsg = "Put a number and I will tell you how many times it appears in the array";
-            const string NoNumberMsg = "The array doesn't contais that number";
-            const string NumberMsg = "The array contains the number {0} {1} times";
-            const string ErrorMsg = "Error, you must put a number between 1 and 9";
-
+            const string MenuTitle = "AVAILABLE ITEMS IN THE SHOP";
+            const string MenuCategories = "Name  Min.Level  Power  Weight(Kg)  Cost(€)  isRareItem  RareType";
+       
+            string[] arrayItems = {"Sword", "Shield", "Potion", "Bow" };
+            string[] arrayRarity = {"Common", "Rare", "Legendary", "Ordinary" };
             Random rand = new Random();
-            int[] arrayStraight = new int[10];
-            int numRand;
-            int aux;
-            int numInput = 0;
-            int counter = 0;
-            bool isCorrect = true;
+            string name;
+            int minLevel;
+            int power;
+            float weight;
+            float cost;
+            bool isRareItem;
+            string rareType;
+            int verify;
+            int rarityNumber;
 
-            for (int i = 0; i < arrayStraight.GetLength(0);i++)
-            {
-                numRand = rand.Next(1, 10);
-                arrayStraight[i] = numRand;
-            }
+            Console.WriteLine(MenuTitle);
+            Console.WriteLine(MenuCategories);
 
-            for(int i = 1; i < arrayStraight.GetLength(0); i++)
+            for(int i = 0; i < arrayItems.GetLength(0); i++)
             {
-                for(int j = 0; j < arrayStraight.GetLength(0) - 1; j++)
+                name = arrayItems[i];
+                minLevel = rand.Next(1, 11);
+                power = rand.Next(100, 501);
+                weight = (float)rand.NextDouble();
+                weight = (float)Math.Round(weight, 2);
+                cost = (float)rand.NextDouble();
+                cost = (float)Math.Round(cost, 2);
+                verify = rand.Next(1, 3);
+                if(verify == 1)
                 {
-                    if (arrayStraight[j] > arrayStraight[j + 1])
-                    {
-                        aux = arrayStraight[j + 1];
-                        arrayStraight[j + 1] = arrayStraight[j];
-                        arrayStraight[j] = aux;
-                    }
-                }
-            }
-
-            Console.WriteLine(IntroMsg);
-            try
-            {
-                numInput = Int32.Parse(Console.ReadLine());
-            }
-            catch (OverflowException)
-            {
-                Console.WriteLine(ErrorMsg);
-                isCorrect = false;
-            }
-            catch (FormatException)
-            {
-                Console.WriteLine(ErrorMsg);
-                isCorrect = false;
-            }
-            catch (Exception)
-            {
-                Console.WriteLine(ErrorMsg);
-                isCorrect = false;
-            }
-            if (numInput < 1 || numInput > 9)
-            {
-                isCorrect = false;
-            }
-
-            if(isCorrect == true)
-            {
-                for(int i = 0; i < arrayStraight.GetLength(0); i++)
-                {
-                    if (arrayStraight[i] == numInput)
-                    {
-                        counter++;
-                    }
-                }
-
-                if(counter > 0)
-                {
-                    Console.WriteLine(NumberMsg, numInput, counter);
+                    isRareItem = true;
                 }
                 else
                 {
-                    Console.WriteLine(NoNumberMsg);
+                    isRareItem = false;
                 }
-
-                for (int i = 0; i < arrayStraight.GetLength(0); i++)
+                if(isRareItem == true)
                 {
-                    Console.Write($"{arrayStraight[i]} ");
+                    rarityNumber = rand.Next(0, 2);
+                    rareType = arrayRarity[rarityNumber];
                 }
+                else
+                {
+                    rarityNumber = 3;
+                    rareType = arrayRarity[rarityNumber];
+                }
+                Console.WriteLine($"{name}  {minLevel}          {power}     {weight}        {cost}€     {isRareItem}        {rareType}");
             }
-
-            
         }
     }
 }
