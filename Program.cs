@@ -17,10 +17,11 @@
             int index;
             string[] pokemonList = new string[] { "Pikachu", "Charmander", "Squirtle", "Bulbasaur", "Eevee", "Jigglypuff", "Meowth", "Psyduck", "Snorlax", "Gengar", "Machop", "Magikarp", "Vulpix", "Onix", "Abra"};
 
-            Console.WriteLine(IntroMsg);
+            
             op = 2;
             while(op != 0)
             {
+                Console.WriteLine(IntroMsg);
                 try
                 {
                     op = Int32.Parse(Console.ReadLine());
@@ -66,18 +67,16 @@
                         }
                         if(index > 0 && index < 16)
                         {
-                            for (int i = 0; i < pokemonList.GetLength(0); i++)
+                            if (pokemonList[index] != "empty")
                             {
-                                if (i == index && pokemonList[i] != "empty")
-                                {
-                                    Console.WriteLine(PkmnReleasedMsg, pokemonList[i]);
-                                    pokemonList[i] = NoPkmn;
-                                }
-                                else
-                                {
-                                    Console.WriteLine(PkmnReleasedEmptyMsg, i);
-                                }
+                                Console.WriteLine(PkmnReleasedMsg, pokemonList[index]);
+                                pokemonList[index] = NoPkmn;
                             }
+                            else
+                            {
+                                Console.WriteLine(PkmnReleasedEmptyMsg, index);
+                            }
+
                         }
                         else
                         {
