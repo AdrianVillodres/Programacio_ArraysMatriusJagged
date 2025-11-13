@@ -12,7 +12,13 @@
             Random rand = new Random();
             int randomNumber = 0;
             bool isTeasure = false;
+            int num;
 
+            num = 1;
+            while(num != 3)
+            {
+                
+            }
             for(int i = 0; i < map.GetLength(0); i++)
             {
                 for (int j = 0; j < map.GetLength(1); j++)
